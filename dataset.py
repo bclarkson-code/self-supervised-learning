@@ -4,6 +4,8 @@ from urllib.request import urlopen
 from shutil import copyfileobj 
 from tqdm import tqdm
 
+label_url = 'https://console.cloud.google.com/storage/browser/_details/gcs-public-data--healthcare-nih-chest-xray-labels/README.md;tab=live_object'
+
 class XRayDataset(pl.LightningDataModule):
     data_urls = [
         'https://nihcc.box.com/shared/static/vfk49d74nhbxq3nqjg0900w5nvkorp5c.gz',
